@@ -246,20 +246,20 @@
                     </div>
                     <div class="column right">
                         <div class="text">Message me</div>
-                        <form action="contact-me.php">
+                        <form id="reused_form" method="post" role="form">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Your full name" required>                                    
+                                    <input type="text" placeholder="Your full name" required name="contact_name">                                    
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>                                    
+                                    <input type="email" placeholder="Email" required name="contact_email">                                    
                                 </div>
                             </div>
                             <div class="field subject">
-                                <input type="text" placeholder="Describe project ..." required>                                    
+                                <input type="text" placeholder="Describe project ..." required name="subject">                                    
                             </div>
                             <div class="field message">
-                                <textarea type="text" placeholder="Enter your message here" required></textarea>                                    
+                                <textarea type="text" placeholder="Enter your message here" name="contact_message" required maxlength="6000" rows="7"></textarea>                                    
                             </div>
                             <div class="button">
                                 <button class="btn-submit" type="submit">Send Message</button>
